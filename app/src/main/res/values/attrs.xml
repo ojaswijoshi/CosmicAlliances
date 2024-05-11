@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Define your custom attributes here -->
+    <declare-styleable name="CustomView">
+        <!-- Define custom attributes for CustomView -->
+        <attr name="customAttribute1" format="string" />
+        <attr name="customAttribute2" format="integer" />
+        <!-- Add more custom attributes as needed -->
+    </declare-styleable>
+</resources>

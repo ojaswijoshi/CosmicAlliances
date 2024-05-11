@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_image"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/text_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp" />
+
+    <!-- Player Character (Rocket) -->
+    <ImageView
+        android:id="@+id/rocket_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rocket"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Obstacles (Asteroids) -->
+    <ImageView
+        android:id="@+id/asteroid_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/asteroids"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp" />
+
+    <!-- Additional asteroids -->
+    <ImageView
+        android:id="@+id/asteroid_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/asteroids"
+        android:layout_below="@id/asteroid_1"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="200dp" />
+
+    <ImageView
+        android:id="@+id/asteroid_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/asteroid_2"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="73dp"
+        android:src="@drawable/asteroids" />
+
+    <ImageView
+        android:id="@+id/asteroid_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/asteroids"
+        android:layout_below="@id/asteroid_3"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="400dp" />
+
+    <ImageView
+        android:id="@+id/asteroid_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/asteroids"
+        android:layout_below="@id/asteroid_4"
+        android:layout_marginStart="400dp"
+        android:layout_marginTop="500dp" />
+
+    <!-- Mercury Collectibles -->
+    <ImageView
+        android:id="@+id/mercury_collectible_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/collectibles_mercury"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="300dp" />
+
+
+    <!-- Additional Mercury collectibles -->
+
+    <ImageView
+        android:id="@+id/mercury_collectible_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mercury_collectible_1"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="-112dp"
+        android:src="@drawable/collectibles_mercury" />
+
+    <ImageView
+        android:id="@+id/mercury_collectible_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mercury_collectible_2"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="-130dp"
+        android:src="@drawable/collectibles_mercury" />
+
+    <ImageView
+        android:id="@+id/mercury_collectible_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mercury_collectible_3"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="86dp"
+        android:src="@drawable/collectibles_mercury" />
+
+    <ImageView
+        android:id="@+id/mercury_collectible_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/collectibles_mercury"
+        android:layout_below="@id/mercury_collectible_4"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="300dp" />
+
+    <!-- Alien Spaceships -->
+
+    <!-- Additional alien spaceships -->
+
+    <ImageView
+        android:id="@+id/alien_spaceship_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="237dp"
+        android:src="@drawable/alien_spaceships" />
+
+    <ImageView
+        android:id="@+id/alien_spaceship_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alien_spaceship_1"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="73dp"
+        android:src="@drawable/alien_spaceships" />
+
+    <ImageView
+        android:id="@+id/alien_spaceship_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alien_spaceship_2"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/alien_spaceships" />
+
+    <ImageView
+        android:id="@+id/alien_spaceship_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alien_spaceship_3"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="33dp"
+        android:src="@drawable/alien_spaceships" />
+
+    <ImageView
+        android:id="@+id/alien_spaceship_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alien_spaceship_4"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="-473dp"
+        android:src="@drawable/alien_spaceships" />
+
+</RelativeLayout>
+
+

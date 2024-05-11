@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_image" />
+
+    <!-- GameView -->
+    <com.tmsimple.cosmicalliances.GameView
+        android:id="@+id/game_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Rocket Image -->
+    <ImageView
+        android:id="@+id/rocket_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rocket"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Asteroid Images -->
+    <ImageView
+        android:id="@+id/asteroid_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/asteroids"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp" />
+
+    <ImageView
+        android:id="@+id/asteroid_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/asteroids"
+        android:layout_toEndOf="@id/asteroid_1"
+        android:layout_below="@id/asteroid_1"
+        android:layout_marginTop="50dp" />
+
+    <!-- Venus Collectibles -->
+    <ImageView
+        android:id="@+id/venus_collectible_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/collectibles_venus"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="300dp" />
+
+    <ImageView
+        android:id="@+id/venus_collectible_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/venus_collectible_1"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="126dp"
+        android:layout_toStartOf="@id/venus_collectible_1"
+        android:src="@drawable/collectibles_venus" />
+
+    <ImageView
+        android:id="@+id/venus_collectible_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/venus_collectible_1"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="301dp"
+        android:layout_toEndOf="@id/venus_collectible_1"
+        android:src="@drawable/collectibles_venus" />
+
+    <!-- Joystick Background -->
+    <com.tmsimple.cosmicalliances.VirtualJoystick
+        android:id="@+id/joystick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="234dp"
+        android:layout_marginBottom="-512dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/joystick_background_img" />
+
+</RelativeLayout>

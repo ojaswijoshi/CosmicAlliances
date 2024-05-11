@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="enemy_spaceship" />
+    <drawable name="explosion0" />
+    <drawable name="shot" />
+    <drawable name="background" />
+    <drawable name="life" />
+    <drawable name="player_spaceship" />
+    <drawable name="joystick_knob" />
+    <drawable name="joystick_background" />
+</resources>
